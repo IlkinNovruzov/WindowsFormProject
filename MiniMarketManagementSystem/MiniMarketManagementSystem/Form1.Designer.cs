@@ -43,7 +43,6 @@
             label6 = new Label();
             label7 = new Label();
             label_exit = new Label();
-            label_clear = new Label();
             TextBox_username = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_password = new Guna.UI2.WinForms.Guna2TextBox();
             guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -80,7 +79,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Goldenrod;
-            label3.Location = new Point(607, 68);
+            label3.Location = new Point(522, 56);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(124, 46);
@@ -140,25 +139,13 @@
             label_exit.AutoSize = true;
             label_exit.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label_exit.ForeColor = Color.Goldenrod;
-            label_exit.Location = new Point(827, -9);
+            label_exit.Location = new Point(830, -1);
             label_exit.Margin = new Padding(4, 0, 4, 0);
             label_exit.Name = "label_exit";
             label_exit.Size = new Size(38, 41);
             label_exit.TabIndex = 6;
             label_exit.Text = "X";
             label_exit.Click += label_exit_Click;
-            // 
-            // label_clear
-            // 
-            label_clear.AutoSize = true;
-            label_clear.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label_clear.ForeColor = Color.Goldenrod;
-            label_clear.Location = new Point(540, 466);
-            label_clear.Margin = new Padding(4, 0, 4, 0);
-            label_clear.Name = "label_clear";
-            label_clear.Size = new Size(93, 41);
-            label_clear.TabIndex = 5;
-            label_clear.Text = "Clear";
             // 
             // TextBox_username
             // 
@@ -232,7 +219,7 @@
             Button_login.Margin = new Padding(4, 5, 4, 5);
             Button_login.Name = "Button_login";
             Button_login.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            Button_login.Size = new Size(240, 69);
+            Button_login.Size = new Size(240, 44);
             Button_login.TabIndex = 4;
             Button_login.Text = "LOGIN";
             // 
@@ -259,7 +246,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label_exit);
-            Controls.Add(label_clear);
             Controls.Add(Button_login);
             Controls.Add(TextBox_password);
             Controls.Add(TextBox_username);
@@ -286,7 +272,6 @@
         private Label label6;
         private Label label7;
         private Label label_exit;
-        private Label label_clear;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_username;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_password;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
