@@ -215,7 +215,7 @@
             Button_login.FillColor = Color.Goldenrod;
             Button_login.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Button_login.ForeColor = Color.Black;
-            Button_login.Location = new Point(483, 377);
+            Button_login.Location = new Point(482, 382);
             Button_login.Margin = new Padding(4, 5, 4, 5);
             Button_login.Name = "Button_login";
             Button_login.ShadowDecoration.CustomizableEdges = customizableEdges7;
