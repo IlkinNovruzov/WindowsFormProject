@@ -50,6 +50,7 @@
             guna2ButtonFastCash = new Guna.UI2.WinForms.Guna2Button();
             guna2ButtonDeposit = new Guna.UI2.WinForms.Guna2Button();
             guna2ButtonWithDraw = new Guna.UI2.WinForms.Guna2Button();
+            labelWelcome = new Label();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -107,7 +108,7 @@
             guna2ButtonStatement.FillColor = Color.Yellow;
             guna2ButtonStatement.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonStatement.ForeColor = Color.Black;
-            guna2ButtonStatement.Location = new Point(555, 245);
+            guna2ButtonStatement.Location = new Point(555, 277);
             guna2ButtonStatement.Name = "guna2ButtonStatement";
             guna2ButtonStatement.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2ButtonStatement.Size = new Size(285, 66);
@@ -126,12 +127,13 @@
             guna2ButtonBalance.FillColor = Color.Yellow;
             guna2ButtonBalance.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonBalance.ForeColor = Color.Black;
-            guna2ButtonBalance.Location = new Point(555, 363);
+            guna2ButtonBalance.Location = new Point(555, 378);
             guna2ButtonBalance.Name = "guna2ButtonBalance";
             guna2ButtonBalance.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ButtonBalance.Size = new Size(285, 66);
             guna2ButtonBalance.TabIndex = 19;
             guna2ButtonBalance.Text = "Balance";
+            guna2ButtonBalance.Click += guna2ButtonBalance_Click;
             // 
             // guna2ButtonChangePin
             // 
@@ -145,7 +147,7 @@
             guna2ButtonChangePin.FillColor = Color.Yellow;
             guna2ButtonChangePin.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonChangePin.ForeColor = Color.Black;
-            guna2ButtonChangePin.Location = new Point(80, 363);
+            guna2ButtonChangePin.Location = new Point(80, 378);
             guna2ButtonChangePin.Name = "guna2ButtonChangePin";
             guna2ButtonChangePin.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2ButtonChangePin.Size = new Size(271, 66);
@@ -164,7 +166,7 @@
             guna2ButtonFastCash.FillColor = Color.Yellow;
             guna2ButtonFastCash.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonFastCash.ForeColor = Color.Black;
-            guna2ButtonFastCash.Location = new Point(80, 245);
+            guna2ButtonFastCash.Location = new Point(80, 277);
             guna2ButtonFastCash.Name = "guna2ButtonFastCash";
             guna2ButtonFastCash.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2ButtonFastCash.Size = new Size(271, 66);
@@ -183,12 +185,13 @@
             guna2ButtonDeposit.FillColor = Color.Yellow;
             guna2ButtonDeposit.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonDeposit.ForeColor = Color.Black;
-            guna2ButtonDeposit.Location = new Point(80, 131);
+            guna2ButtonDeposit.Location = new Point(80, 180);
             guna2ButtonDeposit.Name = "guna2ButtonDeposit";
             guna2ButtonDeposit.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2ButtonDeposit.Size = new Size(271, 66);
             guna2ButtonDeposit.TabIndex = 22;
             guna2ButtonDeposit.Text = "Deposit";
+            guna2ButtonDeposit.Click += guna2ButtonDeposit_Click;
             // 
             // guna2ButtonWithDraw
             // 
@@ -202,18 +205,30 @@
             guna2ButtonWithDraw.FillColor = Color.Yellow;
             guna2ButtonWithDraw.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonWithDraw.ForeColor = Color.Black;
-            guna2ButtonWithDraw.Location = new Point(555, 131);
+            guna2ButtonWithDraw.Location = new Point(555, 180);
             guna2ButtonWithDraw.Name = "guna2ButtonWithDraw";
             guna2ButtonWithDraw.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2ButtonWithDraw.Size = new Size(285, 66);
             guna2ButtonWithDraw.TabIndex = 23;
             guna2ButtonWithDraw.Text = "WithDraw";
             // 
+            // labelWelcome
+            // 
+            labelWelcome.AutoSize = true;
+            labelWelcome.Font = new Font("Segoe UI", 22.8F, FontStyle.Bold, GraphicsUnit.Point);
+            labelWelcome.Location = new Point(254, 111);
+            labelWelcome.Name = "labelWelcome";
+            labelWelcome.Size = new Size(188, 51);
+            labelWelcome.TabIndex = 24;
+            labelWelcome.Text = "Welcome";
+            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(913, 523);
+            Controls.Add(labelWelcome);
             Controls.Add(guna2ButtonWithDraw);
             Controls.Add(guna2ButtonDeposit);
             Controls.Add(guna2ButtonFastCash);
@@ -244,5 +259,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2ButtonFastCash;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonDeposit;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonWithDraw;
+        public Label labelWelcome;
     }
 }

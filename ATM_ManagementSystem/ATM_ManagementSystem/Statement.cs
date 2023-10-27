@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ATM_ManagementSystem
 {
-    public partial class Balance : Form
+    public partial class Statement : Form
     {
-        public Balance()
+        public Statement()
         {
             InitializeComponent();
         }
@@ -26,19 +26,7 @@ namespace ATM_ManagementSystem
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void guna2ButtonDeposit_Click(object sender, EventArgs e)
-        {
-            Deposit deposit = new Deposit();
-            deposit.Show();
-            this.Hide();
-        }
-
-        private void Balance_Load(object sender, EventArgs e)
-        {
-           labelBalance.Text= $"{Login.dt.Rows[0][4]}";
+             Application.Exit();
         }
     }
 }

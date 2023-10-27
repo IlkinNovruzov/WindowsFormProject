@@ -22,6 +22,7 @@ namespace ATM_ManagementSystem
         {
             Application.Exit();
         }
+        public static DataTable dt;
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-VCSVAMO\SQLEXPRESS;Initial Catalog=ATM_DB;Integrated Security=True");
         private void guna2ButtonLogin_Click(object sender, EventArgs e)
         {
@@ -30,13 +31,14 @@ namespace ATM_ManagementSystem
                 con.Open();
                 string query = $"select * from Account where Username='{guna2TextBoxUsername.Text}' and Pin='{guna2TextBoxPinCode.Text}'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
-                DataTable dt = new DataTable();
+                 dt = new DataTable();
                 int row = sda.Fill(dt);
                 if (row == 1)
                 {
                     Home home = new Home();
                     home.Show();
                     this.Hide();
+                    home.labelWelcome.Text = $"Welcome {dt.Rows[0][2]}";
                 }
                 else
                 {
