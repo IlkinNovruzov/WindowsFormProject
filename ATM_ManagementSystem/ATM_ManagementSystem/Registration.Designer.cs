@@ -242,6 +242,7 @@
             guna2ButtonRegister.Size = new Size(225, 66);
             guna2ButtonRegister.TabIndex = 15;
             guna2ButtonRegister.Text = "Register";
+            guna2ButtonRegister.Click += guna2ButtonRegister_Click;
             // 
             // labelBack
             // 

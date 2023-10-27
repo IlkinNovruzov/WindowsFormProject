@@ -85,6 +85,9 @@
             // 
             // guna2TextBoxUsername
             // 
+            guna2TextBoxUsername.BorderColor = Color.Black;
+            guna2TextBoxUsername.BorderRadius = 5;
+            guna2TextBoxUsername.BorderThickness = 2;
             guna2TextBoxUsername.CustomizableEdges = customizableEdges1;
             guna2TextBoxUsername.DefaultText = "";
             guna2TextBoxUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -99,6 +102,7 @@
             guna2TextBoxUsername.Margin = new Padding(3, 4, 3, 4);
             guna2TextBoxUsername.Name = "guna2TextBoxUsername";
             guna2TextBoxUsername.PasswordChar = '\0';
+            guna2TextBoxUsername.PlaceholderForeColor = Color.FromArgb(64, 64, 64);
             guna2TextBoxUsername.PlaceholderText = "";
             guna2TextBoxUsername.SelectedText = "";
             guna2TextBoxUsername.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -107,6 +111,9 @@
             // 
             // guna2TextBoxPinCode
             // 
+            guna2TextBoxPinCode.BorderColor = Color.Black;
+            guna2TextBoxPinCode.BorderRadius = 5;
+            guna2TextBoxPinCode.BorderThickness = 2;
             guna2TextBoxPinCode.CustomizableEdges = customizableEdges3;
             guna2TextBoxPinCode.DefaultText = "";
             guna2TextBoxPinCode.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);

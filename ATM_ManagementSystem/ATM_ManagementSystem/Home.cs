@@ -22,5 +22,14 @@ namespace ATM_ManagementSystem
             Application.Exit();
 
         }
+
+        private void labelLogout_Click(object sender, EventArgs e)
+        {
+            var login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+
     }
 }
