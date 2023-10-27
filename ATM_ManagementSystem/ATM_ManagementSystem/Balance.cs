@@ -36,18 +36,22 @@ namespace ATM_ManagementSystem
             deposit.Show();
             this.Hide();
         }
-
-        private void Balance_Load(object sender, EventArgs e)
+        public static double GetBalance()
         {
+            DataTable dt = new DataTable();
             using (var con = new SqlConnection(@"Data Source=DESKTOP-VCSVAMO\SQLEXPRESS;Initial Catalog=ATM_DB;Integrated Security=True"))
             {
                 con.Open();
                 string query = $"select * from Account where Username='{Login.username}'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
-                DataTable dt = new DataTable();
-                int row = sda.Fill(dt);
-                labelBalance.Text =$"$ {dt.Rows[0][4]}";
+                sda.Fill(dt);
             }
+            return Math.Round(Convert.ToDouble(dt.Rows[0][4]),2);
+        }
+
+        private void Balance_Load(object sender, EventArgs e)
+        {
+                labelBalance.Text = $"$ {GetBalance()}";
         }
     }
 }

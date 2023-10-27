@@ -33,14 +33,15 @@ namespace ATM_ManagementSystem
 
         private void guna2ButtonWithdraw_Click(object sender, EventArgs e)
         {
-            try{
-                if (Convert.ToDouble(guna2TextBoxWithDraw.Text) > 0)
+            try
+            {
+                if (Convert.ToDouble(guna2TextBoxWithDraw.Text) > 0 && Convert.ToDouble(guna2TextBoxWithDraw.Text) <= Balance.GetBalance())
                 {
                     con.Open();
                     string query = $"update Account set Balance=Balance-{guna2TextBoxWithDraw.Text} where Username='{Login.username}'";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
-                    Home.DataStatement("WithDraw",guna2TextBoxWithDraw.Text);
+                    Home.DataStatement("WithDraw", guna2TextBoxWithDraw.Text);
                     MessageBox.Show("WithDraw is Successfully!");
                 }
                 else

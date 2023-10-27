@@ -31,11 +31,14 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel2 = new Panel();
             label2 = new Label();
             label3 = new Label();
             labelBack = new Label();
             guna2DataGridViewTr = new Guna.UI2.WinForms.Guna2DataGridView();
+            guna2ButtonClear = new Guna.UI2.WinForms.Guna2Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridViewTr).BeginInit();
             SuspendLayout();
@@ -75,7 +78,7 @@
             // 
             labelBack.AutoSize = true;
             labelBack.Font = new Font("Segoe UI Semibold", 16.8F, FontStyle.Bold, GraphicsUnit.Point);
-            labelBack.Location = new Point(343, 403);
+            labelBack.Location = new Point(344, 441);
             labelBack.Name = "labelBack";
             labelBack.Size = new Size(77, 38);
             labelBack.TabIndex = 23;
@@ -134,11 +137,33 @@
             guna2DataGridViewTr.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridViewTr.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
+            // guna2ButtonClear
+            // 
+            guna2ButtonClear.BorderRadius = 20;
+            guna2ButtonClear.BorderThickness = 2;
+            guna2ButtonClear.CustomizableEdges = customizableEdges1;
+            guna2ButtonClear.DisabledState.BorderColor = Color.DarkGray;
+            guna2ButtonClear.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2ButtonClear.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2ButtonClear.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2ButtonClear.FillColor = Color.Yellow;
+            guna2ButtonClear.Font = new Font("Segoe UI Semibold", 16.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2ButtonClear.ForeColor = Color.Black;
+            guna2ButtonClear.Location = new Point(519, 433);
+            guna2ButtonClear.Margin = new Padding(0);
+            guna2ButtonClear.Name = "guna2ButtonClear";
+            guna2ButtonClear.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2ButtonClear.Size = new Size(204, 46);
+            guna2ButtonClear.TabIndex = 28;
+            guna2ButtonClear.Text = "Clear History";
+            guna2ButtonClear.Click += guna2ButtonClear_Click;
+            // 
             // Statement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(762, 450);
+            ClientSize = new Size(762, 488);
+            Controls.Add(guna2ButtonClear);
             Controls.Add(guna2DataGridViewTr);
             Controls.Add(labelBack);
             Controls.Add(panel2);
@@ -161,5 +186,6 @@
         private Label label3;
         private Label labelBack;
         public Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewTr;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonClear;
     }
 }

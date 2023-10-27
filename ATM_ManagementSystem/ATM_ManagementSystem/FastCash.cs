@@ -30,16 +30,23 @@ namespace ATM_ManagementSystem
             Application.Exit();
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-VCSVAMO\SQLEXPRESS;Initial Catalog=ATM_DB;Integrated Security=True");
-        private void FastCashMethod(int amount)
+        private void FastCashMethod(double amount)
         {
             try
             {
-                con.Open();
-                string query = $"update Account set Balance=Balance-{amount} where Username='{Login.username}'";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                Home.DataStatement("Fast Cash",$"{amount}");
-                MessageBox.Show("Fast Cash is Successfully!");
+                if (amount <= Balance.GetBalance())
+                {
+                    con.Open();
+                    string query = $"update Account set Balance=Balance-{amount} where Username='{Login.username}'";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    Home.DataStatement("Fast Cash", $"{amount}");
+                    MessageBox.Show("Fast Cash is Successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("There is not enough money in the balance.");
+                }
             }
             catch
             {
