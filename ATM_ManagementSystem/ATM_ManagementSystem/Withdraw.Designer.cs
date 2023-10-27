@@ -88,7 +88,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(91, 222);
+            label1.Location = new Point(88, 172);
             label1.Name = "label1";
             label1.Size = new Size(178, 51);
             label1.TabIndex = 24;
@@ -109,7 +109,7 @@
             guna2TextBoxWithDraw.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBoxWithDraw.ForeColor = Color.Black;
             guna2TextBoxWithDraw.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBoxWithDraw.Location = new Point(258, 227);
+            guna2TextBoxWithDraw.Location = new Point(258, 177);
             guna2TextBoxWithDraw.Margin = new Padding(3, 4, 3, 4);
             guna2TextBoxWithDraw.Name = "guna2TextBoxWithDraw";
             guna2TextBoxWithDraw.PasswordChar = '\0';
@@ -132,7 +132,7 @@
             guna2ButtonWithdraw.FillColor = Color.Yellow;
             guna2ButtonWithdraw.Font = new Font("Segoe UI Semibold", 20.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ButtonWithdraw.ForeColor = Color.Black;
-            guna2ButtonWithdraw.Location = new Point(154, 334);
+            guna2ButtonWithdraw.Location = new Point(151, 301);
             guna2ButtonWithdraw.Name = "guna2ButtonWithdraw";
             guna2ButtonWithdraw.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ButtonWithdraw.Size = new Size(271, 66);
