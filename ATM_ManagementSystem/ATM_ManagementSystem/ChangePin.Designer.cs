@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel2 = new Panel();
             label2 = new Label();
             label3 = new Label();
@@ -65,6 +65,7 @@
             label2.Size = new Size(43, 51);
             label2.TabIndex = 2;
             label2.Text = "x";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -80,7 +81,7 @@
             // 
             guna2ButtonChangePin.BorderRadius = 20;
             guna2ButtonChangePin.BorderThickness = 2;
-            guna2ButtonChangePin.CustomizableEdges = customizableEdges7;
+            guna2ButtonChangePin.CustomizableEdges = customizableEdges1;
             guna2ButtonChangePin.DisabledState.BorderColor = Color.DarkGray;
             guna2ButtonChangePin.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2ButtonChangePin.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -90,10 +91,11 @@
             guna2ButtonChangePin.ForeColor = Color.Black;
             guna2ButtonChangePin.Location = new Point(161, 287);
             guna2ButtonChangePin.Name = "guna2ButtonChangePin";
-            guna2ButtonChangePin.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2ButtonChangePin.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2ButtonChangePin.Size = new Size(271, 66);
             guna2ButtonChangePin.TabIndex = 21;
             guna2ButtonChangePin.Text = "Change Pin";
+            guna2ButtonChangePin.Click += guna2ButtonChangePin_Click;
             // 
             // labelBack
             // 
@@ -111,7 +113,7 @@
             guna2TextBoxConfirmPin.BorderColor = Color.Black;
             guna2TextBoxConfirmPin.BorderRadius = 5;
             guna2TextBoxConfirmPin.BorderThickness = 2;
-            guna2TextBoxConfirmPin.CustomizableEdges = customizableEdges9;
+            guna2TextBoxConfirmPin.CustomizableEdges = customizableEdges3;
             guna2TextBoxConfirmPin.DefaultText = "";
             guna2TextBoxConfirmPin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBoxConfirmPin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -128,7 +130,7 @@
             guna2TextBoxConfirmPin.PlaceholderForeColor = Color.FromArgb(64, 64, 64);
             guna2TextBoxConfirmPin.PlaceholderText = "";
             guna2TextBoxConfirmPin.SelectedText = "";
-            guna2TextBoxConfirmPin.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2TextBoxConfirmPin.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TextBoxConfirmPin.Size = new Size(198, 46);
             guna2TextBoxConfirmPin.TabIndex = 24;
             // 
@@ -157,7 +159,7 @@
             guna2TextBoxNewPin.BorderColor = Color.Black;
             guna2TextBoxNewPin.BorderRadius = 5;
             guna2TextBoxNewPin.BorderThickness = 2;
-            guna2TextBoxNewPin.CustomizableEdges = customizableEdges11;
+            guna2TextBoxNewPin.CustomizableEdges = customizableEdges5;
             guna2TextBoxNewPin.DefaultText = "";
             guna2TextBoxNewPin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBoxNewPin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -174,7 +176,7 @@
             guna2TextBoxNewPin.PlaceholderForeColor = Color.FromArgb(64, 64, 64);
             guna2TextBoxNewPin.PlaceholderText = "";
             guna2TextBoxNewPin.SelectedText = "";
-            guna2TextBoxNewPin.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2TextBoxNewPin.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBoxNewPin.Size = new Size(198, 46);
             guna2TextBoxNewPin.TabIndex = 27;
             // 

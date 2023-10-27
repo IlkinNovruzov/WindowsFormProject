@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel2 = new Panel();
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
-            guna2TextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2TextBoxDeposit = new Guna.UI2.WinForms.Guna2TextBox();
             guna2ButtonDeposit = new Guna.UI2.WinForms.Guna2Button();
             labelBack = new Label();
             panel2.SuspendLayout();
@@ -83,37 +83,37 @@
             label1.TabIndex = 6;
             label1.Text = "Amount:";
             // 
-            // guna2TextBoxUsername
+            // guna2TextBoxDeposit
             // 
-            guna2TextBoxUsername.BorderColor = Color.Black;
-            guna2TextBoxUsername.BorderRadius = 5;
-            guna2TextBoxUsername.BorderThickness = 2;
-            guna2TextBoxUsername.CustomizableEdges = customizableEdges1;
-            guna2TextBoxUsername.DefaultText = "";
-            guna2TextBoxUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBoxUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBoxUsername.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBoxUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBoxUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBoxUsername.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBoxUsername.ForeColor = Color.Black;
-            guna2TextBoxUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBoxUsername.Location = new Point(252, 204);
-            guna2TextBoxUsername.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBoxUsername.Name = "guna2TextBoxUsername";
-            guna2TextBoxUsername.PasswordChar = '\0';
-            guna2TextBoxUsername.PlaceholderForeColor = Color.FromArgb(64, 64, 64);
-            guna2TextBoxUsername.PlaceholderText = "";
-            guna2TextBoxUsername.SelectedText = "";
-            guna2TextBoxUsername.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBoxUsername.Size = new Size(198, 46);
-            guna2TextBoxUsername.TabIndex = 7;
+            guna2TextBoxDeposit.BorderColor = Color.Black;
+            guna2TextBoxDeposit.BorderRadius = 5;
+            guna2TextBoxDeposit.BorderThickness = 2;
+            guna2TextBoxDeposit.CustomizableEdges = customizableEdges5;
+            guna2TextBoxDeposit.DefaultText = "";
+            guna2TextBoxDeposit.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBoxDeposit.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBoxDeposit.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBoxDeposit.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBoxDeposit.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBoxDeposit.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBoxDeposit.ForeColor = Color.Black;
+            guna2TextBoxDeposit.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBoxDeposit.Location = new Point(239, 204);
+            guna2TextBoxDeposit.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBoxDeposit.Name = "guna2TextBoxDeposit";
+            guna2TextBoxDeposit.PasswordChar = '\0';
+            guna2TextBoxDeposit.PlaceholderForeColor = Color.FromArgb(64, 64, 64);
+            guna2TextBoxDeposit.PlaceholderText = "";
+            guna2TextBoxDeposit.SelectedText = "";
+            guna2TextBoxDeposit.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2TextBoxDeposit.Size = new Size(198, 46);
+            guna2TextBoxDeposit.TabIndex = 7;
             // 
             // guna2ButtonDeposit
             // 
             guna2ButtonDeposit.BorderRadius = 20;
             guna2ButtonDeposit.BorderThickness = 2;
-            guna2ButtonDeposit.CustomizableEdges = customizableEdges3;
+            guna2ButtonDeposit.CustomizableEdges = customizableEdges7;
             guna2ButtonDeposit.DisabledState.BorderColor = Color.DarkGray;
             guna2ButtonDeposit.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2ButtonDeposit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -123,7 +123,7 @@
             guna2ButtonDeposit.ForeColor = Color.Black;
             guna2ButtonDeposit.Location = new Point(144, 332);
             guna2ButtonDeposit.Name = "guna2ButtonDeposit";
-            guna2ButtonDeposit.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2ButtonDeposit.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2ButtonDeposit.Size = new Size(271, 66);
             guna2ButtonDeposit.TabIndex = 23;
             guna2ButtonDeposit.Text = "Deposit";
@@ -147,7 +147,7 @@
             ClientSize = new Size(588, 450);
             Controls.Add(labelBack);
             Controls.Add(guna2ButtonDeposit);
-            Controls.Add(guna2TextBoxUsername);
+            Controls.Add(guna2TextBoxDeposit);
             Controls.Add(label1);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
@@ -166,7 +166,7 @@
         private Label label2;
         private Label label3;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxUsername;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxDeposit;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonDeposit;
         private Label labelBack;
     }

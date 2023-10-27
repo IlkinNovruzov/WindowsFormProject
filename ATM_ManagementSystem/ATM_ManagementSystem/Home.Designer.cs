@@ -114,6 +114,7 @@
             guna2ButtonStatement.Size = new Size(285, 66);
             guna2ButtonStatement.TabIndex = 18;
             guna2ButtonStatement.Text = "Mini Statement";
+            guna2ButtonStatement.Click += guna2ButtonStatement_Click;
             // 
             // guna2ButtonBalance
             // 
@@ -153,6 +154,7 @@
             guna2ButtonChangePin.Size = new Size(271, 66);
             guna2ButtonChangePin.TabIndex = 20;
             guna2ButtonChangePin.Text = "Change Pin";
+            guna2ButtonChangePin.Click += guna2ButtonChangePin_Click;
             // 
             // guna2ButtonFastCash
             // 
@@ -172,6 +174,7 @@
             guna2ButtonFastCash.Size = new Size(271, 66);
             guna2ButtonFastCash.TabIndex = 21;
             guna2ButtonFastCash.Text = "Fast Cash";
+            guna2ButtonFastCash.Click += guna2ButtonFastCash_Click;
             // 
             // guna2ButtonDeposit
             // 
@@ -211,6 +214,7 @@
             guna2ButtonWithDraw.Size = new Size(285, 66);
             guna2ButtonWithDraw.TabIndex = 23;
             guna2ButtonWithDraw.Text = "WithDraw";
+            guna2ButtonWithDraw.Click += guna2ButtonWithDraw_Click;
             // 
             // labelWelcome
             // 
@@ -241,6 +245,7 @@
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
+            Load += Home_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);

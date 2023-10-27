@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,7 +39,15 @@ namespace ATM_ManagementSystem
 
         private void Balance_Load(object sender, EventArgs e)
         {
-           labelBalance.Text= $"{Login.dt.Rows[0][4]}";
+            using (var con = new SqlConnection(@"Data Source=DESKTOP-VCSVAMO\SQLEXPRESS;Initial Catalog=ATM_DB;Integrated Security=True"))
+            {
+                con.Open();
+                string query = $"select * from Account where Username='{Login.username}'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                int row = sda.Fill(dt);
+                labelBalance.Text =$"$ {dt.Rows[0][4]}";
+            }
         }
     }
 }

@@ -244,7 +244,7 @@
         private Panel panel1;
         private Label labelExit;
         private System.Windows.Forms.Timer timer1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxUsername;
+        public Guna.UI2.WinForms.Guna2TextBox guna2TextBoxUsername;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxPinCode;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonLogin;
