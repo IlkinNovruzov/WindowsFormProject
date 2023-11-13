@@ -43,6 +43,7 @@ namespace ATM_ManagementSystem
                     cmd.ExecuteNonQuery();
                     Home.DataStatement("WithDraw", guna2TextBoxWithDraw.Text);
                     MessageBox.Show("WithDraw is Successfully!");
+                    
                 }
                 else
                 {
